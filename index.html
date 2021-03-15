@@ -9,26 +9,32 @@
   <meta name="author" content>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="index.js"></script>
-  <link href="bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <link href="index.css" rel="stylesheet">
 </head>
 <body>
-  <nav class="navbar navbar-default" role="navigation">
-    <div class="navbar-collapse collapse">
-      <ul class="nav navbar-nav navbar-center">
-        <li><a href="index.html">Today's Goal</a></li>
-        <li><a>Logo</a></li>
-        <li><a href="prompt-generator.html">Prompt Generator</a></li>
-      </ul>
-    </div>
-  </nav>
-  <h1>Today's Goal</h1>
-  <p>What's your goal today?</p>
-  <input type="number" id="goal-input"/><button id="lets-go">Let's go!</button>
-  <p>Today's goal:</p>
-  <p id="goal-display">... </p>
-  <p>How much have you written so far?</p>
-  <input type="number" id="so-far"/><button id="words-so-far">words so far</button>
-  <p id="encouragement"></p>
+
+    <nav class="navbar navbar-expand-md justify-content-center" role="navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">Logo</button>
+      <div class="navbar-collapse collapse justify-content-center" id="navbarSupportedContent">
+        <ul class="nav justify-content-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Today's Goal</a></li>
+          <span class="d-none d-md-block"><a>Logo</a></span>
+          <li class="nav-item"><a class="nav-link" href="prompt-generator.html">Prompt Generator</a></li>
+        </ul>
+      </div>
+    </nav>
+
+  <div class="container">
+      <h1>Today's Goal</h1>
+      <p>What's your goal today?</p>
+      <input type="number" id="goal-input"/><button id="lets-go">Let's go!</button>
+      <p>Today's goal:</p>
+      <p id="goal-display">... </p>
+      <p>How much have you written so far?</p>
+      <input type="number" id="so-far"/><button id="words-so-far">words so far</button>
+      <p id="encouragement"></p>
+  </div>
 </body>
 </html>
