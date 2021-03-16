@@ -1,2 +1,10 @@
-
-
+.left-col {
+  float: right;
+  margin-right: 5px;
+}
+.right-col {
+  margin-left: 5px;
+}
+#encouragement {
+  text-align: center;
+}

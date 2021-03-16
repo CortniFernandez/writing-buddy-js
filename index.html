@@ -14,27 +14,46 @@
   <link href="index.css" rel="stylesheet">
 </head>
 <body>
-
-    <nav class="navbar navbar-expand-md justify-content-center" role="navigation">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">Logo</button>
-      <div class="navbar-collapse collapse justify-content-center" id="navbarSupportedContent">
-        <ul class="nav justify-content-center">
-          <li class="nav-item"><a class="nav-link" href="index.html">Today's Goal</a></li>
-          <span class="d-none d-md-block"><a>Logo</a></span>
-          <li class="nav-item"><a class="nav-link" href="prompt-generator.html">Prompt Generator</a></li>
-        </ul>
-      </div>
-    </nav>
-
+  <nav class="navbar navbar-expand-md justify-content-center" role="navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">Logo</button>
+    <div class="navbar-collapse collapse justify-content-center" id="navbarSupportedContent">
+      <ul class="nav justify-content-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Today's Goal</a></li>
+        <span class="d-none d-md-block"><a>Logo</a></span>
+        <li class="nav-item"><a class="nav-link" href="prompt-generator.html">Prompt Generator</a></li>
+      </ul>
+    </div>
+  </nav>
   <div class="container">
-      <h1>Today's Goal</h1>
-      <p>What's your goal today?</p>
-      <input type="number" id="goal-input"/><button id="lets-go">Let's go!</button>
-      <p>Today's goal:</p>
-      <p id="goal-display">... </p>
-      <p>How much have you written so far?</p>
-      <input type="number" id="so-far"/><button id="words-so-far">words so far</button>
+    <h1>Today's Goal</h1>
+    <div class="col-12">
+      <div class="row">
+        <div class="col-6">
+          <div class="row left-col">
+            <input type="number" placeholder="Today's goal" id="goal-input" />
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="row right-col">
+            <input type="number" placeholder="Words so far" id="so-far"/>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <div class="row left-col">
+            <div id="goal-display">... </div>
+          </div> 
+        </div>
+        <div class="col-6">
+          <div class="row right-col">
+            <div id="so-far-display">...</div>
+          </div>
+        </div>
+      </div>
+
       <p id="encouragement"></p>
+    </div>
   </div>
 </body>
 </html>
