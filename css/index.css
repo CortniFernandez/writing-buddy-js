@@ -1,0 +1,27 @@
+.left-col {
+  float: right;
+  margin-right: 5px;
+}
+.right-col {
+  margin-left: 5px;
+}
+.img-box {
+  height: 500px;
+  margin: 0 auto;
+  position: relative;
+}
+.img-box img {
+  position: absolute;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  -ms-transition: opacity 1s ease-in-out;    
+  transition: opacity 1s ease-in-out;
+}
+.transparent {
+  opacity: 0;
+}
+#encouragement {
+  text-align: center;
+  margin-top: 10px;
+}

@@ -20,10 +20,12 @@ $(document).ready(function() {
       $("#encouragement").html("You can do this.");
     } else if (percentage >= 0.2 && percentage <= 0.4) {
       $("#encouragement").html("I believe in you.");
+      $(".img-one").addClass("transparent");
     } else if (percentage > 0.4 && percentage <= 0.6) {
       $("#encouragement").html("You're doing it! Keep going!");
     } else if (percentage > 0.6 && percentage <= 0.8) {
       $("#encouragement").html("You're doing so awesome!");
+      $(".img-two").addClass("transparent");
     } else if (percentage > 0.8 && percentage < 1) {
       $("#encouragement").html("Nearly there!");
     } else if (percentage >= 1) {
