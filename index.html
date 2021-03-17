@@ -11,6 +11,9 @@
   <script src="js/index.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Indie+Flower&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/46f97ecb95.js" crossorigin="anonymous"></script>
   <link href="css/index.css" rel="stylesheet">
 </head>
 <body>
@@ -24,9 +27,9 @@
       </ul>
     </div>
   </nav>
-  <div class="container">
-    <h1>Today's Goal</h1>
-    <div class="col-12">
+  <div class="container page-container">
+    <h1 class="page-title">Today's Goal</h1>
+    <div class="col-12 content-wrap">
       <div class="row">
         <div class="col-6">
           <div class="row left-col">
@@ -51,19 +54,26 @@
           </div>
         </div>
       </div>
-      <p id="encouragement">Help me grow?</p>
-      <div class="img-box">
-        <img class="bg-mat" src="./img/flower-mat.png">
-        <img class="img-nine transparent flower" src="./img/flower-nine.png" />
-        <img class="img-eight transparent flower" src="./img/flower-eight.png" />
-        <img class="img-seven transparent flower" src="./img/flower-seven.png" />
-        <img class="img-six transparent flower" src="./img/flower-six.png" />
-        <img class="img-five transparent flower" src="./img/flower-five.png" />
-        <img class="img-four transparent flower" src="./img/flower-four.png" />
-        <img class="img-three transparent flower" src="./img/flower-three.png" />
-        <img class="img-two transparent flower" src="./img/flower-two.png" />
-        <img class="img-one flower" src="./img/flower-one.png" />
+      <div class="row">
+        <div class="col-12">
+          <p id="encouragement">Help me grow?</p>
+          <div class="img-box">
+            <img class="bg-mat" src="./img/flower-mat.png">
+            <img class="img-nine transparent flower" src="./img/flower-nine.png" />
+            <img class="img-eight transparent flower" src="./img/flower-eight.png" />
+            <img class="img-seven transparent flower" src="./img/flower-seven.png" />
+            <img class="img-six transparent flower" src="./img/flower-six.png" />
+            <img class="img-five transparent flower" src="./img/flower-five.png" />
+            <img class="img-four transparent flower" src="./img/flower-four.png" />
+            <img class="img-three transparent flower" src="./img/flower-three.png" />
+            <img class="img-two transparent flower" src="./img/flower-two.png" />
+            <img class="img-one flower" src="./img/flower-one.png" />
+          </div>
+        </div>
       </div>
+      <footer class="footer">
+        <div class="footer-text">Made with <i class="far fa-heart" id="heart"></i> by Cortni | 2021</div>
+      </footer>
     </div>
   </div>
 </body>
