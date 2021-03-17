@@ -6,12 +6,14 @@
   margin-left: 5px;
 }
 .img-box {
-  height: 500px;
+  height: 100%;
+  width: 30%;
   margin: 0 auto;
   position: relative;
 }
 .img-box img {
   position: absolute;
+  width: 100%;
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
   -o-transition: opacity 1s ease-in-out;
@@ -24,4 +26,10 @@
 #encouragement {
   text-align: center;
   margin-top: 10px;
+}
+
+@media only screen and (max-width: 992px) {
+  .img-box {
+    width: 70%;
+  }
 }
