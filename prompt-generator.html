@@ -10,19 +10,29 @@
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <link href="css/index.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Indie+Flower&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/46f97ecb95.js" crossorigin="anonymous"></script>
+  <link href="css/prompt-generator.css" rel="stylesheet">
 </head>
 <body>
   <nav class="navbar navbar-expand-md justify-content-center" role="navigation">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">Logo</button>
-    <div class="navbar-collapse collapse justify-content-center" id="navbarSupportedContent">
-      <ul class="nav justify-content-center">
-        <li class="nav-item"><a class="nav-link" href="index.html">Today's Goal</a></li>
-        <span class="d-none d-md-block"><a>Logo</a></span>
+    <button class="navbar-toggler" id="mobile-logo" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"><img class="collapse-logo" src="./img/cloud-logo.png" />Write as Rain</button>
+    <div class="navbar-collapse collapse" id="navbarSupportedContent">
+      <ul class="nav">
+        <li class="nav-item d-none d-md-block" id="mid-logo"><img class="logo" src="./img/cloud-logo.png" />Write as Rain</li>
+        <li class="nav-item"><a class="nav-link" href="index.html">Word Counter</a></li>
         <li class="nav-item"><a class="nav-link" href="prompt-generator.html">Prompt Generator</a></li>
       </ul>
     </div>
   </nav>
-  <h1>Prompt Generator</h1>
+  <div class="container page-container">
+    <h1 class="page-title">Prompt Generator</h1>
+    <p id="coming-soon">Coming Soon</p>
+  </div>
+  <footer class="footer">
+    <div class="footer-text">Made with <i class="far fa-heart" id="heart"></i> by Cortni | 2021</div>
+  </footer>
 </body>
 </html>

@@ -8,27 +8,28 @@
   <meta name="description" content>
   <meta name="author" content>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script src="js/index.js"></script>
+  <script src="js/word-counter.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Indie+Flower&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/46f97ecb95.js" crossorigin="anonymous"></script>
   <link href="css/index.css" rel="stylesheet">
 </head>
 <body>
   <nav class="navbar navbar-expand-md justify-content-center" role="navigation">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">Logo</button>
-    <div class="navbar-collapse collapse justify-content-center" id="navbarSupportedContent">
-      <ul class="nav justify-content-center">
-        <li class="nav-item"><a class="nav-link" href="index.html">Today's Goal</a></li>
-        <span class="d-none d-md-block"><a>Logo</a></span>
+    <button class="navbar-toggler" id="mobile-logo" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"><img class="collapse-logo" src="./img/cloud-logo.png" />Write as Rain</button>
+    <div class="navbar-collapse collapse" id="navbarSupportedContent">
+      <ul class="nav">
+        <li class="nav-item d-none d-md-block" id="mid-logo"><img class="logo" src="./img/cloud-logo.png" />Write as Rain</li>
+        <li class="nav-item"><a class="nav-link" href="index.html">Word Counter</a></li>
         <li class="nav-item"><a class="nav-link" href="prompt-generator.html">Prompt Generator</a></li>
       </ul>
     </div>
   </nav>
   <div class="container page-container">
-    <h1 class="page-title">Today's Goal</h1>
+    <h1 class="page-title">Every Drop Counts</h1>
     <div class="col-12 content-wrap">
       <div class="row">
         <div class="col-6">

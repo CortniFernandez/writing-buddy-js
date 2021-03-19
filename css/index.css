@@ -1,10 +1,43 @@
+/* --- start of nav --- */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.nav-link {
+  font-family: 'Cinzel', serif;
+  font-size: 14pt;
+  text-align: center;
+}
+#mid-logo {
+  font-size: 36pt;
+  font-family: 'Amatic SC', cursive;
+  margin-right: 1rem;
+}
+#mobile-logo {
+  font-size: 28pt;
+  font-family: 'Amatic SC', cursive;
+}
+.collapse-logo {
+  height: 100px;
+}
+.logo {
+  height: 130px;
+}
+
+/* --- end of nav --- 
+ --- start of body --- */
+
 .page-container {
   position: relative;
   min-height: 100vh;
 }
+.content-wrap {
+  padding-bottom: 10vh;
+}
 .page-title {
   color: rgb(69,92,120);
-  font-family: 'Cinzel', serif;
+  font-family: 'Amatic SC', cursive;
   font-size: 32pt;
   text-align: center;
   border-bottom: 1px solid rgb(140,189,188);
@@ -72,6 +105,10 @@ input:focus {
 .transparent {
   opacity: 0;
 }
+
+/* --- end of body ---
+ --- start of footer --- */
+
 .footer {
   padding-bottom: 1rem;
   position: fixed;
@@ -85,12 +122,25 @@ input:focus {
   box-shadow: 0 0 10px white;
   padding: 2px 10px;
   font-family: 'Indie Flower', cursive;
+  font-size: 16pt;
+  text-align: center;
 }
 #heart {
   color: rgb(206, 83, 104);
 }
-@media only screen and (max-width: 992px) {
+
+/* --- end of footer --- */
+
+@media only screen and (max-width: 767px) {
   .img-box {
-    width: 70%;
+    width: 100%;
+  }
+  .footer-text {
+    font-size: 12pt;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 998px) {
+  .img-box {
+    width: 60%;
   }
 }
