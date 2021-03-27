@@ -1,0 +1,96 @@
+/* --- start of body --- */
+
+body {
+  background-color:rgb(241, 247, 255);
+}
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
+.content-wrap {
+  padding-bottom: 5vh;
+}
+.page-title {
+  color: rgb(69,92,120);
+  font-family: 'Amatic SC', cursive;
+  font-size: 32pt;
+  text-align: center;
+  border-bottom: 1px solid rgb(140,189,188);
+  padding: 30px 0;
+  margin-bottom: 30px;
+}
+p, input {
+  font-family: 'Indie Flower', cursive;
+  font-size: 18pt;
+}
+.left-col {
+  padding-right: 25px;
+  border-right: 1px solid rgb(140,189,188);
+}
+.right-col {
+  float: left;
+  padding-left: 25px;
+}
+#goal-input, #so-far {
+  float: right;
+  border: 1px solid rgb(140,189,188);
+  color: rgb(69,92,120);
+  border-radius: 5px;
+  padding: 5px;
+  width: 200px;
+}
+#goal-input, #goal-input::placeholder {
+  text-align: right;
+}
+input:focus {
+  outline-color: rgb(140,189,188);
+}
+#goal-display, #so-far-display {
+  font-size: 48pt;
+  color: rgb(69,92,120);
+  font-family: 'Indie Flower', cursive;
+}
+#goal-display {
+  float: right;
+}
+#encouragement {
+  text-align: center;
+  margin-top: 10px;
+  color: rgb(69,92,120);
+}
+.img-box {
+  height: 500px;
+  width: 30%;
+  margin: 0 auto;
+  position: relative;
+}
+.bg-mat {
+  position: absolute;
+  left: -100%;
+  right: -100%;
+  margin: auto;
+  padding: 5px;
+}
+.flower {
+  position: absolute;
+  left: -100%;
+  right: -100%;
+  margin: auto;
+  padding: 5px;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  -ms-transition: opacity 1s ease-in-out;    
+  transition: opacity 1s ease-in-out;
+}
+.transparent {
+  opacity: 0;
+}
+
+/* --- end of body --- */
+
+@media only screen and (max-width: 767px) {
+  .bg-mat {
+    width: 400px;
+  }
+}

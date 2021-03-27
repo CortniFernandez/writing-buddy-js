@@ -1,43 +1,11 @@
+/* --- start of body --- */
+
 body {
   background-color:rgb(241, 247, 255);
 }
-
-/* --- start of nav --- */
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-}
-.nav-link {
-  font-family: 'Cinzel', serif;
-  font-size: 14pt;
-  text-align: center;
-}
-#mid-logo {
-  font-size: 36pt;
-  font-family: 'Amatic SC', cursive;
-  margin-right: 1rem;
-}
-#mobile-logo {
-  font-size: 28pt;
-  font-family: 'Amatic SC', cursive;
-}
-.collapse-logo {
-  height: 100px;
-}
-.logo {
-  height: 130px;
-}
-
-/* --- end of nav --- 
- --- start of body --- */
-
 .page-container {
   position: relative;
   min-height: 100vh;
-}
-.content-wrap {
-  padding-bottom: 10vh;
 }
 .page-title {
   color: rgb(69,92,120);
@@ -48,103 +16,22 @@ body {
   padding: 30px 0;
   margin-bottom: 30px;
 }
-p, input {
+.icon-caption {
   font-family: 'Indie Flower', cursive;
   font-size: 18pt;
-}
-.left-col {
-  float: right;
-  padding-right: 25px;
-  border-right: 1px solid rgb(140,189,188);
-}
-.right-col {
-  float: left;
-  padding-left: 25px;
-}
-#goal-input, #so-far {
-  border: 1px solid rgb(140,189,188);
-  color: rgb(69,92,120);
-  border-radius: 5px;
-  padding: 5px;
-  width: 100%;
-}
-#goal-input, #goal-input::placeholder {
-  text-align: right;
-}
-input:focus {
-  outline-color: rgb(140,189,188);
-}
-#goal-display, #so-far-display {
-  font-size: 48pt;
-  color: rgb(69,92,120);
-  font-family: 'Indie Flower', cursive;
-}
-#encouragement {
   text-align: center;
-  margin-top: 10px;
-  color: rgb(69,92,120);
+  padding: 20px 0;
 }
-.img-box {
-  height: 500px;
-  width: 30%;
-  margin: 0 auto;
-  position: relative;
-}
-.bg-mat {
-  position: absolute;
-  left: -100%;
-  right: -100%;
-  margin: auto;
-  padding: 5px;
-}
-.flower {
-  position: absolute;
+.counter-icon {
   width: 100%;
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  -ms-transition: opacity 1s ease-in-out;    
-  transition: opacity 1s ease-in-out;
-}
-.transparent {
-  opacity: 0;
+  height: auto;
+  padding: 0 50px;
 }
 
-/* --- end of body ---
- --- start of footer --- */
+/* --- end of body --- */
 
-.footer {
-  padding-bottom: 1rem;
-  position: fixed;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.footer-text {
-  background-color: white;
-  color: rgb(140,189,188);
-  box-shadow: 0 0 10px white;
-  padding: 2px 10px;
-  font-family: 'Indie Flower', cursive;
-  font-size: 16pt;
-  text-align: center;
-}
-#heart {
-  color: rgb(206, 83, 104);
-}
-
-/* --- end of footer --- */
-
-@media only screen and (max-width: 767px) {
-  .img-box {
-    width: 100%;
-  }
-  .footer-text {
-    font-size: 12pt;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 998px) {
-  .img-box {
-    width: 60%;
+@media only screen and (max-width: 991px) {
+  .counter-icon {
+    padding: 0;
   }
 }

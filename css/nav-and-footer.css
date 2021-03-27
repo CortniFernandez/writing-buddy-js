@@ -1,13 +1,12 @@
 /* --- start of nav --- */
-
 .nav {
   display: flex;
-  justify-content: space-between;
+  justify-content:center;
   align-items: baseline;
 }
 .nav-link {
   font-family: 'Cinzel', serif;
-  font-size: 14pt;
+  font-size: 12pt;
   text-align: center;
 }
 #mid-logo {
@@ -27,27 +26,9 @@
 }
 
 /* --- end of nav --- 
- --- start of body --- */
-
-.page-title {
-  color: rgb(69,92,120);
-  font-family: 'Amatic SC', cursive;
-  font-size: 32pt;
-  text-align: center;
-  border-bottom: 1px solid rgb(140,189,188);
-  padding: 30px 0;
-  margin-bottom: 30px;
-}
-#coming-soon {
-  text-align: center;
-  font-family: 'Indie Flower', cursive;
-}
-
-/* --- end of body ---
- --- start of footer --- */
+--- start of footer --- */
 
 .footer {
-  padding-bottom: 1rem;
   position: fixed;
   bottom: 0;
   left: 50%;

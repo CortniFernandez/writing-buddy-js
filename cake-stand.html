@@ -8,6 +8,7 @@
   <meta name="description" content>
   <meta name="author" content>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/cake-stand.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -15,7 +16,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/46f97ecb95.js" crossorigin="anonymous"></script>
   <link href="css/nav-and-footer.css" rel="stylesheet">
-  <link href="css/index.css" rel="stylesheet">
+  <link href="css/cake-stand.css" rel="stylesheet">
 </head>
 <body>
   <nav class="navbar navbar-expand-md justify-content-center" role="navigation">
@@ -29,20 +30,46 @@
     </div>
   </nav>
   <div class="container page-container">
-    <h1 class="page-title">What do you want to create today?</h1>
-    <div class="row">
-      <div class="col-12 col-md-6">
-        <a href="flower-pot.html"><img class="counter-icon" src="img/flower-icon.png" /></a>
-        <p class="icon-caption">Grow a flower</p>
+    <h1 class="page-title">Every Drop Counts</h1>
+    <div class="content-wrap">
+      <div class="row">
+        <div class="col-6 left-col">
+          <input type="number" placeholder="Today's goal" id="goal-input" />
+        </div>
+        <div class="col-6 right-col">
+          <div class="row">
+            <input type="number" placeholder="Words so far" id="so-far"/>
+          </div>
+        </div>
       </div>
-      <div class="col-12 col-md-6">
-        <a href="cake-stand.html"><img class="counter-icon" src="img/cake-icon.png" /></a>
-        <p class="icon-caption">Make a cake</p>
+      <div class="row">
+        <div class="col-6 left-col">
+            <div id="goal-display">... </div>
+        </div>
+        <div class="col-6 right-col">
+          <div id="so-far-display">...</div>
+        </div>
       </div>
-    </div>
-    <footer class="footer">
-      <div class="footer-text">Made with <i class="far fa-heart" id="heart"></i> by Cortni - 2021</div>
-    </footer>
+      <div class="row">
+        <div class="col-12">
+          <p id="encouragement">Make a cake?</p>
+          <div class="img-box">
+            <img class="bg-mat" src="./img/cake-mat.png">
+            <img class="img-nine transparent cake" src="./img/9-cake.png" />
+            <img class="img-eight transparent cake" src="./img/8-cake.png" />
+            <img class="img-seven transparent cake" src="./img/7-cake.png" />
+            <img class="img-six transparent cake" src="./img/6-cake.png" />
+            <img class="img-five transparent cake" src="./img/5-cake.png" />
+            <img class="img-four transparent cake" src="./img/4-cake.png" />
+            <img class="img-three transparent cake" src="./img/3-cake.png" />
+            <img class="img-two transparent cake" src="./img/2-cake.png" />
+            <img class="img-one cake" src="./img/1-cake.png" />
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footer-text">Made with <i class="far fa-heart" id="heart"></i> by Cortni - 2021</div>
+      </footer>
     </div>
   </div>
 </body>
