@@ -1,5 +1,13 @@
 /* --- start of body --- */
 
+body {
+  background-color:rgb(241, 247, 255);
+  text-align: center;
+}
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
 .page-title {
   color: rgb(69,92,120);
   font-family: 'Amatic SC', cursive;
@@ -9,9 +17,64 @@
   padding: 30px 0;
   margin-bottom: 30px;
 }
-#coming-soon {
-  text-align: center;
+.display-box {
+  height: 200px;
+  border-radius: 25px;
+  border: 5px solid white;
+  background-color:rgb(250, 252, 255);
+  padding: 10px;
+}
+button {
+  margin: 10px;
+  background: rgb(149, 213, 255);
+  border-radius: 50%;
+  border: none;
+  font-size: 24pt;
+  padding: 0 12px;
+}
+button:focus, button:hover {
+  outline: none;
+  box-shadow: 5px 5px 5px rgb(69,92,120);
+}
+.fa-tint {
+  color: white;
+  border: none;
+  font-size: 24pt;
+}
+h6 {
   font-family: 'Indie Flower', cursive;
+  font-size: 16pt;
+  font-weight: bold;
+  color: rgb(69,92,120);
+  display: inline-block;
+}
+p {
+  font-family: 'Indie Flower', cursive;
+  font-size: 14pt;
+  color: rgb(69,92,120);
+  margin-top: 1rem;
+}
+#photo-div {
+  height: 400px;
+  margin-bottom: 3rem;
+}
+#photo {
+  border-radius: 25px;
+  border: 5px solid white;
 }
 
 /* --- end of body --- */
+
+@media only screen and (min-width: 767px) and (max-width: 998px) {
+  .display-box {
+    height: 250px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  p {
+    font-size: 18pt;
+  }
+  #photo {
+    width: 300px;
+  }
+}

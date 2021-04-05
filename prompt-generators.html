@@ -9,6 +9,7 @@
   <meta name="author" content>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="js/prompt-generators.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Indie+Flower&display=swap" rel="stylesheet">
@@ -29,8 +30,29 @@
     </div>
   </nav>
   <div class="container page-container">
-    <h1 class="page-title">Prompt Generator</h1>
-    <p id="coming-soon">Coming Soon</p>
+    <h1 class="page-title">Get Inspired</h1>
+    <div class="row">
+      <div class="col-12 col-md-4">
+        <h6>A contemporary story</h6><button class="gen-contemp-story"><i class="fas fa-tint"></i></button>
+        <p class="contemp-story-display display-box"></p>
+      </div>
+      <div class="col-12 col-md-4">
+        <h6>A speculative story</h6><button class="gen-spec-story"><i class="fas fa-tint"></i></button>
+        <p class="spec-story-display display-box"></p> 
+      </div>
+      <div class="col-12 col-md-4"> 
+        <h6>Maybe add a twist</h6><button class="gen-plot-twist"><i class="fas fa-tint"></i></button>
+        <p class="plot-twist-display display-box"></p> 
+      </div>
+      <div class="col-12">
+        <h6>Or perhaps just an image</h6>
+        <button class="gen-rand-img"><i class="fas fa-tint"></i></button>
+        <div id="photo-div">
+          <img class="d-none" id="photo" src="https://picsum.photos/500/400" />
+        </div>
+      </div>
+    </div>
+
   </div>
   <footer class="footer">
     <div class="footer-text">Made with <i class="far fa-heart" id="heart"></i> by Cortni - 2021</div>
