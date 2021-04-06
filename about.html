@@ -15,7 +15,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/46f97ecb95.js" crossorigin="anonymous"></script>
   <link href="css/nav-and-footer.css" rel="stylesheet">
-  <link href="css/index.css" rel="stylesheet">
+  <link href="css/about.css" rel="stylesheet">
 </head>
 <body>
   <nav class="navbar navbar-expand-md justify-content-center" role="navigation">
@@ -30,15 +30,30 @@
     </div>
   </nav>
   <div class="container page-container">
-    <h1 class="page-title">What do you want to create today?</h1>
+    <h1 class="page-title">About</h1>
     <div class="row">
       <div class="col-12 col-md-6">
-        <a href="flower-pot.html"><img class="counter-icon" src="img/flower-icon.png" /></a>
-        <p class="icon-caption">Grow a flower</p>
+        <div class="row">
+          <div class="col-12 col-lg-6 img-col">
+            <img id="profile-pic" src="./img/profile.png">
+          </div>
+          <div class="col-12 col-lg-6">
+            <p>Hi, I'm Cortni, a writer who currently can't write. I made this site for the people who are brave enough to keep trying, and I'm really glad you're here.</p>
+          </div>
+        </div>
       </div>
       <div class="col-12 col-md-6">
-        <a href="cake-stand.html"><img class="counter-icon" src="img/cake-icon.png" /></a>
-        <p class="icon-caption">Make a cake</p>
+        <p>Share your thoughts?</p>
+        <form method="post" action="contact.php">
+            <input name="name" placeholder="Your name">
+            <br>
+            <input name="email" placeholder="Your email">
+            <br>
+            <textarea rows="5" cols="20" name="message" placeholder="Your message"></textarea>
+            <br>
+            <input type="submit" name="submit" id="sub-btn">
+        </form>
+        <?=$thankYou ?>
       </div>
     </div>
     <footer class="footer">

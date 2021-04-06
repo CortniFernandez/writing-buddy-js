@@ -4,6 +4,10 @@
   justify-content:center;
   align-items: baseline;
 }
+.navbar-toggler:focus, .navbar-toggler:hover {
+  outline: none;
+  box-shadow: 5px 5px 5px rgb(69,92,120);
+}
 .nav-link {
   font-family: 'Cinzel', serif;
   font-size: 12pt;
@@ -17,6 +21,7 @@
 #mobile-logo {
   font-size: 28pt;
   font-family: 'Amatic SC', cursive;
+  margin-bottom: 20px;
 }
 .collapse-logo {
   height: 100px;
