@@ -35,7 +35,7 @@
       <div class="col-12 col-md-6">
         <div class="row">
           <div class="col-12 col-lg-6 img-col">
-            <img id="profile-pic" src="./img/profile.png">
+            <img class="mb-4" id="profile-pic" src="./img/profile.png">
           </div>
           <div class="col-12 col-lg-6">
             <p>Hi, I'm Cortni, a writer who currently can't write. I made this site for the people who are brave enough to keep trying, and I'm really glad you're here.</p>
@@ -43,17 +43,19 @@
         </div>
       </div>
       <div class="col-12 col-md-6">
-        <p>Share your thoughts?</p>
-        <form method="post" action="contact.php">
-            <input name="name" placeholder="Your name">
-            <br>
-            <input name="email" placeholder="Your email">
-            <br>
-            <textarea rows="5" cols="20" name="message" placeholder="Your message"></textarea>
-            <br>
-            <input type="submit" name="submit" id="sub-btn">
+        <p>Share your thoughts or suggestions?</p>
+        <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xqkwkqvl" method="post">
+          <fieldset id="fs-frm-inputs">
+            <label for="full-name">Name</label>
+            <input type="text" name="name" id="full-name" required="">
+            <label for="email-address">Email</label>
+            <input type="email" name="_replyto" id="email-address" required="">
+            <label for="message">Message</label>
+            <textarea rows="5" name="message" id="message" required=""></textarea>
+            <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+          </fieldset>
+          <input type="submit" value="Submit" id="sub-btn">
         </form>
-        <?=$thankYou ?>
       </div>
     </div>
     <footer class="footer">
